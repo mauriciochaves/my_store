@@ -5,7 +5,7 @@
   "main": "config.js",
   "scripts": {
     "test": "protractor config.js",
-    "wdu": "webdriver-manager update"
+    "wdup": "webdriver-manager update"
   },
   "keywords": [
     "qa"
