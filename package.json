@@ -14,9 +14,9 @@
   "license": "MIT",
   "devDependencies": {
     "jasmine": "^3.3.0",
+    "jasmine-allure-reporter": "^1.0.2",
     "jasmine-spec-reporter": "^4.2.1",
     "protractor": "^5.4.1",
-    "protractor-jasmine2-html-reporter": "0.0.7",
-    "webdriver-manager": "^12.1.0"
+    "protractor-jasmine2-html-reporter": "0.0.7"
   }
 }
