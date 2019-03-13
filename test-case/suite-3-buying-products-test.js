@@ -3,7 +3,7 @@ const LoginPage = require('../pages/login-page');
 const HomePage = require('../pages/home-page');
 const ShoppingCartPage = require('../pages/shopping-cart-page');
 
-describe('Since I gained access with my user', function(){
+describe('Since I gained access with my user @smoke', function(){
 
   const login_page = new LoginPage();
   const home_page = new HomePage();
