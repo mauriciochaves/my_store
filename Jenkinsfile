@@ -1,7 +1,8 @@
 pipeline {
     agent {
         docker {
-            image: 'node:8-alpine'
+            image 'node:8-alpine'
+            args '--link selenium_server'
         }
     }
     stages {
