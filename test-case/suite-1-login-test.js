@@ -55,13 +55,6 @@ describe('Since I accessed the login page', function(){
 
     });
 
-    it('when I try to register an email already registered', function(){
-     
-     login_page.create_an_account('test_mcsj@test.com');
-     expect(login_page.error.getText()).toEqual('An account using this email address has already been registered. Please enter a valid password or request a new one.');
-
-    });
-
     it('when I try to register an incorrect email', function(){
      
      login_page.create_an_account('test_mcsj&test.com');
