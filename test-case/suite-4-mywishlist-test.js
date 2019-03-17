@@ -4,7 +4,7 @@ const HomePage = require('../pages/home-page');
 const AccountPage = require('../pages/account-page');
 const MyWishlistsPage = require('../pages/mywishlists-page');
 
-describe('Since I gained access with my user @smoke', function(){
+describe('Since I gained access with my user', function(){
 
   const login_page = new LoginPage();
   const home_page = new HomePage();

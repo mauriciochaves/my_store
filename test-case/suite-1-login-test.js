@@ -4,7 +4,7 @@
 const LoginPage = require('../pages/login-page');
 const HomePage = require('../pages/home-page');
 
-describe('Since I accessed the login page @smoke', function(){
+describe('Since I accessed the login page', function(){
 
     const login_page = new LoginPage();
     const home_page = new HomePage();

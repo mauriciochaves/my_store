@@ -11,7 +11,7 @@ pipeline {
                 sh "npm install"
                 sh "npm install webdriver-manager -g"
                 sh "npm run wdup"
-                sh "npm smoke"
+                sh "npm test"
             }
         }
     }
