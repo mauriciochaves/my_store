@@ -19,5 +19,10 @@
     "jasmine-spec-reporter": "^4.2.1",
     "protractor": "^5.4.1",
     "protractor-jasmine2-html-reporter": "0.0.7"
+  },
+  "dependencies": {
+    "manager": "^1.0.9",
+    "update": "^0.7.4",
+    "webdriver": "^5.7.2"
   }
 }
