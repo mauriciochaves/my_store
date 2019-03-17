@@ -5,7 +5,7 @@
   "main": "config.js",
   "scripts": {
     "test": "protractor config.js",
-    "smoke": "protractor conf.js --grep='@smoke'",
+    "smoke": "protractor config.js --grep='@smoke'",
     "wdup": "webdriver-manager update"
   },
   "keywords": [
