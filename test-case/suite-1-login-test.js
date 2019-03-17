@@ -14,15 +14,6 @@ describe('Since I accessed the login page', function(){
         home_page.access_sign_in();
     });
 
-    it('when the password is invalid', function(){
- 
-     
-     login_page.log_in('test_mcsj@test.com','teste678');
-     expect(login_page.alert.getText()).toContain('There is 1 error');   
-     expect(login_page.error.getText()).toEqual('Authentication failed.');
-       
-    });
-
     it('when the user is not registered', function(){
        
      login_page.log_in('me1@test.io','test123');
