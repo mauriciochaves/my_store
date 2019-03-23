@@ -4,7 +4,7 @@ exports.config = {
     //pipeline
     //seleniumAddress: 'http://selenium_server:4444/wd/hub',
     //job
-    seleniumAddress: 'http://localhost:4444/',
+    seleniumAddress: 'http://localhost:4444/wd/hub',
     framework: 'jasmine2',
     specs:['test-case/*-test.js'],
     baseUrl:'http://automationpractice.com/index.php',
