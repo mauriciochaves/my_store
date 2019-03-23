@@ -1,8 +1,11 @@
-FROM node:8-alpine
-RUN -p 4444:4444 -p 59000:59000 selenium/standalone-chrome-debug
-RUN npm install
-RUN npm install webdriver-manager -g
-RUN npm run wdup
-RUN npm test
-FROM maven:3-alpine
-RUN allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
+#FROM jenkinsci/blueocean
+FROM jenkins:latest
+USER root
+RUN apt-get update
+RUN apt-get install -y sudo
+RUN apt-get install -y node.js 
+RUN apt-get update
+RUN apt-get install -y python3
+RUN apt-get install -y python3-pip  
+# FROM maven:3-alpine
+# RUN allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
