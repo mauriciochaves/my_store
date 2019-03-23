@@ -1,7 +1,10 @@
 exports.config = {
 
     // directConnect:true,
-    seleniumAddress: 'http://selenium_server:4444/wd/hub',
+    //pipeline
+    //seleniumAddress: 'http://selenium_server:4444/wd/hub',
+    //job
+    seleniumAddress: 'http://localhost:4444/',
     framework: 'jasmine2',
     specs:['test-case/*-test.js'],
     baseUrl:'http://automationpractice.com/index.php',
