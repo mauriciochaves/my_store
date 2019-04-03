@@ -4,7 +4,7 @@ pipeline {
         stage('Run Tests') {
             agent {
                 docker {
-                    image 'selenium/node-chrome'
+                    image 'iojs'
                     //args '--link selenium_server'
                 }
             }
