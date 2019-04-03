@@ -4,8 +4,8 @@ pipeline {
         stage('Run Tests') {
             agent {
                 docker {
-                    image 'iojs'
-                    //args '--link selenium_server'
+                    image 'node:8-alpine'
+                    args '--link selenium/standalone-chrome-debug'
                 }
             }
             steps {
