@@ -2,11 +2,12 @@ node {
 
     stage('Biuld 1'){
         echo 'Biulding...'
-        sh 'apt-get install docker'
-    }
-
-    stage('Biuld 2') {
-        echo 'Biulding...'
+        sh 'apt-get install node'
+        sh 'apt-get install npm'
+        sh "npm install"
+        sh "npm install webdriver-manager -g"
+        sh "npm run wdup"
+        sh "npm test"
     }
 
 
