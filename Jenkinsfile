@@ -4,7 +4,7 @@ pipeline {
         stage('Run Tests') {
             agent {
                 docker {
-                    image 'selenium/node-chrome-debug'
+                    image 'selenium/node-chrome'
                     //args '--link selenium_server'
                 }
             }
