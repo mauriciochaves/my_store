@@ -4,8 +4,8 @@ pipeline {
         stage('Run Tests') {
             agent {
                 docker {
-                    image 'node:8-alpine'
-                    args '--link selenium_server'
+                    image 'selenium/node-chrome-debug'
+                    //args '--link selenium_server'
                 }
             }
             steps {
