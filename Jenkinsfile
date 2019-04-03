@@ -5,7 +5,7 @@ pipeline {
             agent {
                 docker {
                     image 'node:8-alpine'
-                    image 'digitalgenius/ubuntu-node-chrome-selenium'
+                    image 'selenium/standalone-chrome-debug'
                     //args '--link selenium_server'
                 }
             }
