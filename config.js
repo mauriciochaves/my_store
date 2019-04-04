@@ -1,8 +1,8 @@
 exports.config = {
 
-    directConnect:true,
+    // directConnect:true,
     //pipeline
-    // seleniumAddress: 'http://selenium_server:4444/wd/hub',
+    seleniumAddress: 'http://selenium_server:4444/wd/hub',
     //job
     //seleniumAddress: 'http://172.18.0.1:4444/wd/hub',
     framework: 'jasmine2',
@@ -58,9 +58,9 @@ exports.config = {
     capabilities: {
         'browserName':'chrome',
 
-        chromeOptions: {
-            args: [ "--headless", "--disable-gpu", "--window-size=800,600" ]
-          }
+        // chromeOptions: {
+        //     args: [ "--headless", "--disable-gpu", "--window-size=800,600" ]
+        //   }
 
     }
 }
