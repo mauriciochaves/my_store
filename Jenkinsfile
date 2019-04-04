@@ -1,5 +1,5 @@
 node {
-    checkout scm
+    // checkout scm
     docker.image('selenium/standalone-chrome-debug'),withRun('-d -p 4444:4444 -p 59000:59000') { c ->
         docker.image('node:8-alpine').inside("--link ${c.id}") {
             sh "npm install"
